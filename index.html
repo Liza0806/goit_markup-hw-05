@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="page">
+<body class="page studio">
 
   <!--header-->
   <header>
@@ -28,9 +28,9 @@
         <a href="./index.html" class="link-webstudio link">Web<span class="logo-studio">Studio</span> </a>
 
         <ul class="site-nav list">
-          <li><a href="./index.html" class="nav-header link">Studio</a></li>
-          <li><a href="./portfolio.html" class="nav-header link">Portfolio</a></li>
-          <li><a href="" class="nav-header link">Contacts</a></li>
+          <li><a href="./index.html" class="nav-header studio link">Studio</a></li>
+          <li><a href="./portfolio.html" class="nav-header portfolio link">Portfolio</a></li>
+          <li><a href="" class="nav-header contacts link">Contacts</a></li>
         </ul>
       </nav>
 
@@ -49,9 +49,39 @@
 
     <section class="hero section">
       <h1 class="hero-title">Effective Solutions for Your Business</h1>
-      <button type="button" class="hero-button">Order Service</button>
+      <button type="button" class="hero-button" data-modal-open>Order Service</button>
+   
+      
     </section>
+<div class="backdrop is-hidden" data-modal>
+ 
+ <div class="modal">   
+   
+    
+  
+  <button type="button" class="close-button" data-modal-close> 
+   
+<svg class="close-svg" width="24" height="24" viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="12" />
+  <circle cx="12" cy="12" r="11.5" stroke="black" stroke-opacity="0.1" />
+  <g clip-path="url(#clip0_1_72)">
+    <path class="close-x"
+      d="M16 8.80571L15.1943 8L12 11.1943L8.80571 8L8 8.80571L11.1943 12L8 15.1943L8.80571 16L12 12.8057L15.1943 16L16 15.1943L12.8057 12L16 8.80571Z"
+      fill="" />
+  </g>
+  <defs>
+    <clipPath id="clip0_1_72">
+      <rect width="8" height="8" fill="white" transform="translate(8 8)" />
+    </clipPath>
+  </defs>
+</svg>
+ 
 
+  </button>
+
+
+</div>
+</div>
 
     <!--advantages-->
 
@@ -365,6 +395,8 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
+  
 </body>
 
 </html>
